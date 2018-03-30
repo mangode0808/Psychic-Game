@@ -1,5 +1,5 @@
 
-var alphabetLettersAndNumbers = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var lettersAndNumbers = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 var wins = 0;
 var losses = 0;
@@ -8,14 +8,14 @@ var guessesSoFar = [];
 
 var userGuess = null;
 
-var letterAndNumberToBeGuessed = alphabetLettersAndNumbers[Math.floor(Math.random() * alphabetLettersAndNumbers.length)];
+var letterAndNumberToBeGuessed = lettersAndNumbers[Math.floor(Math.random() * lettersAndNumbers.length)];
 console.log("Wins: " + wins + " Losses: " + losses + " GuessesLeft: " + guessesLeft + " Guesses so far:   " + guessesSoFar + " Computer picked: " + letterAndNumberToBeGuessed);
 
 document.onkeyup = function (event) {
 
     var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
 
-    if (guessesSoFar.indexOf(userGuess) < 0 && alphabetLettersAndNumbers.indexOf(userGuess) >= 0) {
+    if (guessesSoFar.indexOf(userGuess) < 0 && lettersAndNumbers.indexOf(userGuess) >= 0) {
         guessesSoFar[guessesSoFar.length] = userGuess;
 
         guessesLeft--;
@@ -35,7 +35,7 @@ function newFunction(userGuess) {
         console.log("You won!");
         guessesLeft = 9;
         guessesSoFar = [];
-        letterAndNumberToBeGuessed = alphabetLettersAndNumbers[Math.floor(Math.random() * alphabetLettersAndNumbers.length)];
+        letterAndNumberToBeGuessed = lettersAndNumbers[Math.floor(Math.random() * lettersAndNumbers.length)];
         console.log("Wins: " + wins + " Losses: " + losses + " GuessesLeft: " + guessesLeft + " Guesses so far:   " + guessesSoFar + " Computer picked: " + letterAndNumberToBeGuessed);
     }
     if (guessesLeft == 0) {
@@ -43,7 +43,7 @@ function newFunction(userGuess) {
         console.log("You lost!");
         guessesLeft = 9;
         guessesSoFar = [];
-        letterAndNUmberToBeGuessed = alphabetLettersAndNumbers[Math.floor(Math.random() * alphabetLettersAndNumbers.length)];
+        letterAndNUmberToBeGuessed = lettersAndNumbers[Math.floor(Math.random() * lettersAndNumbers.length)];
         console.log("Wins: " + wins + " Losses: " + losses + " GuessesLeft: " + guessesLeft + " Guesses so far: " + guessesSoFar + " Computer picked: " + letterAndNumberToBeGuessed);
     }
 }
