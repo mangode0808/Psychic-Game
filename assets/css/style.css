@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(255, 187, 187);
+    color: rgb(255, 255, 255);
+    text-align: center;   
+}
+
+h1{
+    font-size: 45px;
+}
+
+
+
+
+footer {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+  }
