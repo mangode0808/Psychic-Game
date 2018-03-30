@@ -7,11 +7,10 @@ Run index.html on terminal to open Psychic-Game.
 
 # Built With
 JavaScrip(js) - JavaScript, often abbreviated as JS, is a high-level, interpreted programming language.
-HTML - Hypertext Markup Language
-CSS - Cascading Style Sheets
-Contributing
+HTML - Hypertext Markup Language.
+CSS - Cascading Style Sheets.
 
-#Authors
+# Authors
 Dulguun Enkhsaikhan
 
 Acknowledgments
